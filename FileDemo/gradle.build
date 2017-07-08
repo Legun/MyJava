@@ -1,0 +1,18 @@
+apply plugin: "java"
+apply plagin: "application"
+
+mainClassName = "ru.wcstd.FileDemo"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    baseName = "FileDemo"
+    version = "0.0.1"
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = "2.11"
+}

@@ -2,9 +2,13 @@ package ru.wcstd;
 
 import java.awt.*;
 import java.awt.event.*;
+import ru.wcstd.*;
 
-private class CommandAction implements ActionListener {
-    public void actionPerformed(ActionEvent e){
+class CommandAction implements ActionListener {
+    public CommandAction() {
+		// TODO Auto-generated constructor stub
+	}
+	public void actionPerformed(ActionEvent e){
         String command = e.getActionCommand();
         if(start){
             if(command.equals("-")){

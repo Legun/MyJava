@@ -1,0 +1,13 @@
+apply plugin: "java"
+apply plugin: "application"
+
+mainClassName = "hello.Main"
+
+repositories {
+    mavenCentral()
+}
+
+
+jar {
+        manifest.attributes("Main-Class": mainClassName);
+}

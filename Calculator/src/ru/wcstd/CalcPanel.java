@@ -1,4 +1,4 @@
-package ru.wstd;
+package ru.wcstd;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -9,7 +9,7 @@ class CalcPanel extends JPanel {
     private JButton display;
     private JPanel panel;
     private double result;
-    private String lastComand;
+    private String lastCommand;
     private boolean start;
 
     public CalcPanel(){
@@ -23,7 +23,7 @@ class CalcPanel extends JPanel {
         display.setEnabled(false);
         add(display, BorderLayout.NORTH);
 
-        ActionListener insert = new InsertAction();
+        ActionListener insert = new InserAction();
         ActionListener command = new CommandAction();
 
         panel = new JPanel();
